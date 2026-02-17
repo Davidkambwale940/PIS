@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Services | PIS Security</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pis.css">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="hero hero-small">
+  <nav class="navbar">
+    <h1 class="logo">
+      <img src="images/pis-logo.png" class="logo-img">
+      PIS SECURITY <span>SERVICES</span>
+    </h1>
+
+    <!-- HAMBURGER -->
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="Homepage.html">Home</a></li>
+      <li><a href="about us.html">About us</a></li>
+      <li><a href="services.html">Our Services</a></li>
+      <li><a href="team.html">Our Team</a></li>
+      <li><a href="contact.html" class="btn">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-content fade-in">
+    <h2>Our Services</h2>
+    <p>Professional security solutions you can trust across Namibia.</p>
+  </div>
+
+  <section class="g4s-about">
+
+    <div class="about-left">
+      <h3>What We Do</h3>
+      <p>
+        PIS Security Services delivers professional guarding, response and
+        protection services supported by trained personnel and strict
+        operational standards.
+      </p>
+
+      <h3>Our Core Services</h3>
+      <ul class="services-list">
+        <li><i class="fas fa-shield-halved"></i> 24/7 Guarding</li>
+        <li><i class="fas fa-bell"></i> Alarm Response</li>
+        <li><i class="fas fa-user-shield"></i> VIP Protection</li>
+        <li><i class="fas fa-warehouse"></i> Warehouse Security</li>
+        <li><i class="fas fa-store"></i> Retail Security</li>
+        <li><i class="fas fa-truck"></i> Logistics Security</li>
+        <li><i class="fas fa-people-group"></i> Event Security</li>
+        <li><i class="fas fa-door-open"></i> Front of House</li>
+        <li><i class="fas fa-search"></i> Private Investigations</li>
+      </ul>
+<br>
+      <h3>Organizations We Serve:</h3>
+      <ul class="services-list">
+        <li><i class="fas fa-check"></i> Namibian University Of Science And Technology (NUST)</li>
+        <li><i class="fas fa-check"></i> NamWater</li>
+        <li><i class="fas fa-check"></i> Bank of Namibia</li>
+        <li><i class="fas fa-check"></i> NamPower</li>
+        <li><i class="fas fa-check"></i> Telecom Namibia</li>
+        <li><i class="fas fa-check"></i> Social Security Commission</li>
+        <li><i class="fas fa-check"></i> Ministry of Education</li>
+        <li><i class="fas fa-check"></i> Municipality of Gobabis</li>
+        <li><i class="fas fa-check"></i> //Karas Regional Council</li>
+          <li><i class="fas fa-check"></i> Namibia Civil Aviation Authority</li>
+            <li><i class="fas fa-check"></i> SADC Malaria Elimination Eight Secretariat </li>
+          <li><i class="fas fa-check"></i> Municipality of Walvis bay </li>
+           <li><i class="fas fa-check"></i> NORED Electricity (Pty) Ltd </li>
+            <li><a> And many more...</a></li>   
+      </ul>
+    </div>
+
+    <!-- SLIDESHOW -->
+    <div class="about-right">
+      <div class="slideshow" id="slideshow">
+        <img src="images/mati.jpeg" class="slide active">
+        <img src="images/back.jpeg" class="slide">
+        <img src="images/piss.jpeg" class="slide">
+          <img src="images/sqaud.png" class="slide">
+          <img src="images/wada.jpeg" class="slide">
+          <img src="images/gang.png" class="slide">
+
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:40px;">
+
+    <div>
+      <h2 id="guards" style="font-size:48px; font-weight:bold; margin:0;">0</h2>
+      <p style="margin:5px 0 0; font-size:18px;">Security Guards</p>
+    </div>
+
+    <div>
+      <h2 id="regions" style="font-size:48px; font-weight:bold; margin:0;">0</h2>
+      <p style="margin:5px 0 0; font-size:18px;">Regions Covered</p>
+    </div>
+
+    <div>
+      <h2 id="clients" style="font-size:48px; font-weight:bold; margin:0;">0</h2>
+      <p style="margin:5px 0 0; font-size:18px;">Clients Served</p>
+    </div>
+
+    <div>
+      <h2 id="years" style="font-size:48px; font-weight:bold; margin:0;">0</h2>
+      <p style="margin:5px 0 0; font-size:18px;">Years Of Experience</p>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  function animateCounter(id, target, duration, addPlus=false) {
+    const element = document.getElementById(id);
+    let count = 0;
+    let increment = target / (duration / 50); // 50ms per tick
+    const timer = setInterval(() => {
+      count += increment;
+      if(count >= target) {
+        count = target;
+        clearInterval(timer);
+      }
+      element.textContent = Math.floor(count) + (addPlus ? "+" : "");
+    }, 50);
+  }
+
+  // Animate counters with "+" for big numbers
+  animateCounter('guards', 1620, 3000, true);  // 1600+ Security Guards
+  animateCounter('regions', 13, 2000, true);   // 14+ Regions
+  animateCounter('clients', 30, 3000, true);  // 120+ Clients
+  animateCounter('years', 9, 2000, false);    // 10 Years (no +)
+</script>
+</header>
+
+<section class="about-footer">
+  <div class="footer-grid">
+
+    <div class="footer-box">
+      <h3>Why Choose PIS Security</h3>
+      <p>
+        Our reputation is built on professionalism, accountability, and
+        consistent service delivery across all sectors.
+      </p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Industries We Serve</h3>
+      <ul>
+        <li>Government Institutions</li>
+        <li>Corporate & Commercial Facilities</li>
+        <li>Utilities & Infrastructure</li>
+        <li>Retail & Logistics Operations</li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contact Us</h3>
+      <p><strong>PIS Security Services</strong></p>
+      <p>Windhoek, Namibia</p>
+      <p>+264 61 2528 95</p>
+      <p>pis2017services@gmail.com</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 PIS Security. All Rights Reserved.</p>
+</footer>
+
+<!-- JS -->
+<script>
+/* SLIDESHOW */
+let slides = document.querySelectorAll('.slide');
+let dots = document.querySelectorAll('.dot');
+let index = 0;
+
+function showSlide(i) {
+  slides.forEach(s => s.classList.remove('active'));
+  dots.forEach(d => d.classList.remove('active'));
+  slides[i].classList.add('active');
+  dots[i].classList.add('active');
+}
+
+setInterval(() => {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}, 4000);
+
+/* SWIPE */
+let startX = 0;
+const slideshow = document.getElementById('slideshow');
+
+slideshow.addEventListener('touchstart', e => {
+  startX = e.touches[0].clientX;
+});
+
+slideshow.addEventListener('touchend', e => {
+  let endX = e.changedTouches[0].clientX;
+  if (startX - endX > 50) index = (index + 1) % slides.length;
+  if (endX - startX > 50) index = (index - 1 + slides.length) % slides.length;
+  showSlide(index);
+});
+
+/* MENU */
+document.querySelector('.menu-toggle').onclick = () => {
+  document.querySelector('.nav-links').classList.toggle('show');
+};
+</script>
+
+</body>
+</html>
