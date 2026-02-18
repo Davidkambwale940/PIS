@@ -874,43 +874,48 @@ footer {
   padding-top: 120px;
 }
 /* ================= MOBILE NAVBAR FIX ================= */
+/* ================= MOBILE TWO-LINE NAVBAR ================= */
 @media (max-width: 768px) {
 
   .navbar {
-    padding: 10px 15px;   /* smaller padding for mobile */
+    flex-direction: column;     /* stack into two rows */
+    align-items: flex-start;
+    padding: 10px 15px;
   }
 
-  /* Keep PIS SECURITY SERVICES in one line */
+  /* TOP ROW → LOGO + NAME */
   .logo {
+    width: 100%;
+    white-space: nowrap;        /* keep text in one line */
     font-size: 18px;
-    white-space: nowrap;
+    margin-bottom: 6px;         /* space between logo and links */
   }
 
   .logo-img {
     width: 40px;
   }
 
-  /* Horizontal scroll for 6 links */
+  /* SECOND ROW → NAV LINKS */
   .navbar ul {
+    width: 100%;
     display: flex;
-    flex-wrap: nowrap;          /* prevent wrapping */
-    overflow-x: auto;           /* scroll left/right only */
-    overflow-y: hidden;         /* prevent vertical movement */
-    white-space: nowrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;           /* scroll left/right */
+    overflow-y: hidden;
     gap: 8px;
+    padding: 0;
     margin: 0;
-    padding-left: 0;
+    white-space: nowrap;
     -webkit-overflow-scrolling: touch;
   }
 
   .navbar ul li {
-    flex: 0 0 auto;             /* prevent shrinking */
+    flex: 0 0 auto;
   }
 
   .navbar ul li a {
     padding: 8px 6px;
     font-size: 14px;
-    white-space: nowrap;
   }
 
   /* Hide scrollbar */
@@ -919,7 +924,7 @@ footer {
   }
 
   .hero {
-    padding-top: 100px;
+    padding-top: 120px; /* adjust for taller navbar */
   }
 }
 
@@ -931,14 +936,11 @@ footer {
   }
 
   .navbar ul li a {
-    padding: 7px 4px;
     font-size: 13px;
+    padding: 7px 5px;
   }
 
   .navbar ul {
     gap: 6px;
   }
 }
-
-
-
