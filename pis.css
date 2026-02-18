@@ -873,4 +873,72 @@ footer {
 .hero {
   padding-top: 120px;
 }
+/* ================= MOBILE NAVBAR FIX ================= */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 10px 15px;   /* smaller padding for mobile */
+  }
+
+  /* Keep PIS SECURITY SERVICES in one line */
+  .logo {
+    font-size: 18px;
+    white-space: nowrap;
+  }
+
+  .logo-img {
+    width: 40px;
+  }
+
+  /* Horizontal scroll for 6 links */
+  .navbar ul {
+    display: flex;
+    flex-wrap: nowrap;          /* prevent wrapping */
+    overflow-x: auto;           /* scroll left/right only */
+    overflow-y: hidden;         /* prevent vertical movement */
+    white-space: nowrap;
+    gap: 8px;
+    margin: 0;
+    padding-left: 0;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .navbar ul li {
+    flex: 0 0 auto;             /* prevent shrinking */
+  }
+
+  .navbar ul li a {
+    padding: 8px 6px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  /* Hide scrollbar */
+  .navbar ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 100px;
+  }
+}
+
+/* EXTRA SMALL PHONES */
+@media (max-width: 480px) {
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .navbar ul li a {
+    padding: 7px 4px;
+    font-size: 13px;
+  }
+
+  .navbar ul {
+    gap: 6px;
+  }
+}
+
+
 
