@@ -875,50 +875,62 @@ footer {
 }
 
 /* ================= MOBILE ================= */
-/* NAV LINKS MOBILE HORIZONTAL SCROLL */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .logo-img {
+    width: 40px;
+  }
+
+  /* Horizontal Scroll Navigation */
   .navbar ul {
-    display: flex;
-    overflow-x: auto;         /* allows left/right scroll */
-    overflow-y: hidden;       /* prevent vertical scroll */
-    white-space: nowrap;      /* keep links on one line */
-    gap: 6px;                 /* space between links */
-    padding-left: 0;          /* flush Home to left */
-    margin: 0;
-    flex-wrap: nowrap;        /* prevent wrapping */
-    -webkit-overflow-scrolling: touch; /* smooth swipe on iOS */
+    gap: 8px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
   }
 
   .navbar ul li {
-    flex: 0 0 auto;           /* prevents shrinking/wrapping */
+    flex: 0 0 auto; /* Prevent shrinking */
   }
 
   .navbar ul li a {
-    padding: 8px 5px;         /* vertical = 8px, horizontal = 5px */
+    padding: 8px 6px;
     font-size: 14px;
-    white-space: nowrap;
   }
 
-  /* Hide scrollbar (optional) */
+  /* Hide scrollbar */
   .navbar ul::-webkit-scrollbar {
     display: none;
   }
-}
 
+  .hero {
+    padding-top: 100px;
+  }
+}
 
 /* EXTRA SMALL PHONES */
 @media (max-width: 480px) {
-  .navbar ul li a {
-    padding: 7px 3px;           /* slightly smaller for tiny screens */
-    font-size: 13px;
-  }
-
-  .navbar ul {
-    gap: 4px;
-  }
 
   .logo {
     font-size: 16px;
   }
-}
 
+  .navbar ul li a {
+    padding: 7px 4px;
+    font-size: 13px;
+  }
+
+  .navbar ul {
+    gap: 6px;
+  }
+}
