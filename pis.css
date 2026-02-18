@@ -876,19 +876,12 @@ footer {
 
 /* ================= MOBILE ================= */
 /* MOBILE NAVBAR FOR 6 LINKS - ONE LINE, HORIZONTAL SCROLL */
+/* MOBILE NAVBAR FOR 6 LINKS - ONE LINE, HORIZONTAL SCROLL */
 @media (max-width: 600px) {
   .navbar {
     flex-direction: row;       /* keep logo and links on one line */
     align-items: center;
     padding: 8px 10px;         /* small padding for mobile */
-    .navbar ul {
-  display: flex;
-  gap: 25px;
-  margin: 0;
-  padding-left: 0;
-  flex-wrap: nowrap;
-  align-items: flex-end; /* align links to bottom of navbar */
-
   }
 
   .navbar ul {
@@ -901,13 +894,6 @@ footer {
     padding-left: 0;            /* flush Home to left */
     margin: 0;
     -webkit-overflow-scrolling: touch; /* smooth swipe on iOS */
-        gap: 6px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    padding-top: 10px;   /* move links slightly down */
-    align-items: flex-end;
-
   }
 
   .navbar ul li {
@@ -927,7 +913,6 @@ footer {
 
   .logo {
     font-size: 18px;
-    white-space: nowrap;  
   }
 
   .logo-img {
@@ -958,23 +943,6 @@ footer {
     font-size: 16px;
   }
 }
-
-
-/* EXTRA SMALL PHONES */
-@media (max-width: 480px) {
-
-  .logo {
-    font-size: 16px;
-  }
-
-  .navbar ul li a {
-    font-size: 13px;
-    padding: 7px 4px; /* smaller for tiny screens */
-  }
-
-}
-
-
 
 
 
