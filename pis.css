@@ -902,7 +902,7 @@ footer {
     width: 100%;
     overflow-x: auto;
     white-space: nowrap;
-    gap: 6px;          /* space between links */
+    gap: 15px;          /* space between links */
     padding-left: 0;    /* flush first link to left */
     padding-top: 8px;
     margin: 0;
@@ -942,6 +942,7 @@ footer {
   }
 
 }
+
 
 
 
