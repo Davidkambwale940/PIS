@@ -880,7 +880,8 @@ footer {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px 10px;
+    padding: 10px 8px;
+
   }
 
   /* LOGO MOBILE */
@@ -901,7 +902,7 @@ footer {
     width: 100%;
     overflow-x: auto;
     white-space: nowrap;
-    gap: 18px;
+    gap: 8px;
     padding-top: 8px;
   }
 
@@ -937,6 +938,7 @@ footer {
   }
 
 }
+
 
 
 
