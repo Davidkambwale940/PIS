@@ -873,34 +873,71 @@ footer {
 }
 
 /* ================= MOBILE ================= */
-
-/* NAV LINKS MOBILE HORIZONTAL SCROLL */
+/* MOBILE NAVBAR FOR 6 LINKS - ONE LINE, HORIZONTAL SCROLL */
 @media (max-width: 600px) {
+  .navbar {
+    flex-direction: row;       /* keep logo and links on one line */
+    align-items: center;
+    padding: 8px 10px;         /* small padding for mobile */
+  }
+
   .navbar ul {
     display: flex;
-    overflow-x: auto;         /* allows left/right scroll */
-    overflow-y: hidden;       /* prevent vertical scroll */
-    white-space: nowrap;      /* keep links on one line */
-    gap: 6px;                 /* space between links */
-    padding-left: 0;          /* flush Home to left */
+    flex-wrap: nowrap;          /* prevent wrapping to new line */
+    overflow-x: auto;           /* allow horizontal scroll */
+    overflow-y: hidden;         /* prevent vertical scroll */
+    white-space: nowrap;        /* keep links in one line */
+    gap: 6px;                   /* horizontal gap between links */
+    padding-left: 0;            /* flush Home to left */
     margin: 0;
-    flex-wrap: nowrap;        /* prevent wrapping */
     -webkit-overflow-scrolling: touch; /* smooth swipe on iOS */
   }
 
   .navbar ul li {
-    flex: 0 0 auto;           /* prevents shrinking/wrapping */
+    flex: 0 0 auto;             /* prevent shrinking/wrapping */
   }
 
   .navbar ul li a {
-    padding: 8px 5px;         /* vertical = 8px, horizontal = 5px */
+    padding: 8px 4px;           /* vertical = 8px, horizontal = 4px */
     font-size: 14px;
-    white-space: nowrap;
+    white-space: nowrap;        /* prevent text break */
   }
 
-  /* Hide scrollbar (optional) */
+  /* hide scrollbar for cleaner look */
   .navbar ul::-webkit-scrollbar {
     display: none;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .logo-img {
+    width: 40px;
+  }
+
+  .logo span {
+    font-size: 18px;
+  }
+
+  .hero {
+    padding-top: 100px;
+  }
+}
+
+/* EXTRA SMALL PHONES */
+@media (max-width: 480px) {
+  .navbar ul li a {
+    padding: 7px 3px;           /* slightly smaller for tiny screens */
+    font-size: 13px;
+  }
+
+  .navbar ul {
+    gap: 4px;
+  }
+
+  .logo {
+    font-size: 16px;
   }
 }
 
@@ -918,6 +955,7 @@ footer {
   }
 
 }
+
 
 
 
