@@ -974,6 +974,152 @@ body {
 body.nav-open {
   overflow: hidden;
 }
+/* =========================================================
+   FINAL NAVBAR + MOBILE OPTIMIZATION
+   ========================================================= */
+
+/* NAVBAR BASE */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #000;
+  z-index: 3000;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 26px;
+  flex-wrap: wrap;
+  line-height: 1.1;
+}
+
+.logo-img {
+  width: 60px;
+  filter: brightness(0) invert(1);
+}
+
+.logo span {
+  color: #c40000;
+  font-weight: bold;
+}
+
+/* NAV LINKS DESKTOP */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  white-space: nowrap;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* RED HOVER UNDERLINE */
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #c40000;
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover::after,
+.navbar ul li a.active::after {
+  width: 100%;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: #c40000;
+}
+
+/* HERO OFFSET FOR FIXED NAVBAR */
+.hero {
+  padding-top: 120px;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  /* LOGO MOBILE */
+  .logo {
+    font-size: 18px;
+  }
+
+  .logo-img {
+    width: 40px;
+  }
+
+  .logo span {
+    font-size: 18px;
+  }
+
+  /* HORIZONTAL SCROLL NAV */
+  .navbar ul {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 18px;
+    padding-top: 8px;
+  }
+
+  .navbar ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navbar ul li {
+    flex: 0 0 auto;
+  }
+
+  .navbar ul li a {
+    font-size: 14px;
+    padding: 6px 0;
+  }
+
+  /* HERO MOBILE SPACING */
+  .hero {
+    padding-top: 100px;
+  }
+
+}
+
+/* EXTRA SMALL PHONES */
+@media (max-width: 480px) {
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .navbar ul li a {
+    font-size: 13px;
+  }
+
+}
+
+
 
 
 
