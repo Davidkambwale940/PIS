@@ -24,9 +24,9 @@
     <ul>
       <li><a href="Homepage.html">Home</a></li>
       <li><a href="about us.html">About us</a></li>
-      <li><a href="services.html">Our Services</a></li>
+      <li><a href="services.html" class="active">Our Services</a></li>
       <li><a href="team.html">Our Team</a></li>
-      <li><a href="contact.html" class="btn">Contact</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
@@ -125,7 +125,7 @@
   function animateCounter(id, target, duration, addPlus=false) {
     const element = document.getElementById(id);
     let count = 0;
-    let increment = target / (duration / 50); // 50ms per tick
+    let increment = target / (duration / 15); // 50ms per tick
     const timer = setInterval(() => {
       count += increment;
       if(count >= target) {
@@ -222,6 +222,7 @@ document.querySelector('.menu-toggle').onclick = () => {
 
 </body>
 </html>
+
 
 
 
