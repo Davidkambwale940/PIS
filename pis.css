@@ -815,9 +815,11 @@ footer {
   align-items: center;
   gap: 10px;
   font-size: 26px;
-  flex-wrap: wrap;
   line-height: 1.1;
+  flex-wrap: nowrap;        /* prevent text from wrapping */
+  white-space: nowrap;      /* keep everything on one line */
 }
+
 
 .logo-img {
   width: 60px;
@@ -910,6 +912,7 @@ footer {
 
   .logo {
     font-size: 18px;
+    white-space: nowrap;  
   }
 
   .logo-img {
@@ -955,6 +958,7 @@ footer {
   }
 
 }
+
 
 
 
