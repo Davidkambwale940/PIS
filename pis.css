@@ -902,7 +902,7 @@ footer {
     width: 100%;
     overflow-x: auto;
     white-space: nowrap;
-    gap: 1px;          /* space between links */
+    gap: 4px;          /* space between links */
     padding-left: 0;    /* flush first link to left */
     padding-top: 8px;
     margin: 0;
@@ -918,7 +918,7 @@ footer {
 
   .navbar ul li a {
     font-size: 14px;
-    padding: 8px 5px;  /* vertical = 8px, horizontal = 5px */
+    padding: 8px 3px;  /* vertical = 8px, horizontal = 5px */
     white-space: nowrap;
   }
 
@@ -942,6 +942,7 @@ footer {
   }
 
 }
+
 
 
 
