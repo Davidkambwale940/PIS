@@ -876,7 +876,6 @@ footer {
 
 /* ================= MOBILE ================= */
 /* MOBILE NAVBAR FOR 6 LINKS - ONE LINE, HORIZONTAL SCROLL */
-/* MOBILE NAVBAR FOR 6 LINKS - ONE LINE, HORIZONTAL SCROLL */
 @media (max-width: 600px) {
   .navbar {
     flex-direction: row;       /* keep logo and links on one line */
@@ -943,20 +942,6 @@ footer {
     font-size: 16px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
