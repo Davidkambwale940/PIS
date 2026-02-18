@@ -874,60 +874,36 @@ footer {
 
 /* ================= MOBILE ================= */
 
+/* NAV LINKS MOBILE HORIZONTAL SCROLL */
 @media (max-width: 600px) {
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 8px 5px;
-    justify-content: flex-start;
-  }
-
-  /* LOGO MOBILE */
-  .logo {
-    font-size: 18px;
-  }
-
-  .logo-img {
-    width: 40px;
-  }
-
-  .logo span {
-    font-size: 18px;
-  }
-
-  /* HORIZONTAL SCROLL NAV FOR 6 LINKS */
   .navbar ul {
     display: flex;
-    width: 100%;
-    overflow-x: auto;
-    white-space: nowrap;
-    gap: 4px;          /* space between links */
-    padding-left: 0;    /* flush first link to left */
-    padding-top: 8px;
+    overflow-x: auto;         /* allows left/right scroll */
+    overflow-y: hidden;       /* prevent vertical scroll */
+    white-space: nowrap;      /* keep links on one line */
+    gap: 6px;                 /* space between links */
+    padding-left: 0;          /* flush Home to left */
     margin: 0;
-  }
-
-  .navbar ul::-webkit-scrollbar {
-    display: none;
+    flex-wrap: nowrap;        /* prevent wrapping */
+    -webkit-overflow-scrolling: touch; /* smooth swipe on iOS */
   }
 
   .navbar ul li {
-    flex: 0 0 auto;    /* prevent shrinking */
+    flex: 0 0 auto;           /* prevents shrinking/wrapping */
   }
 
   .navbar ul li a {
+    padding: 8px 5px;         /* vertical = 8px, horizontal = 5px */
     font-size: 14px;
-     padding: 8px 3px;
     white-space: nowrap;
   }
 
-  /* HERO MOBILE SPACING */
-  .hero {
-    padding-top: 100px;
+  /* Hide scrollbar (optional) */
+  .navbar ul::-webkit-scrollbar {
+    display: none;
   }
-
 }
+
 
 /* EXTRA SMALL PHONES */
 @media (max-width: 480px) {
@@ -942,6 +918,7 @@ footer {
   }
 
 }
+
 
 
 
