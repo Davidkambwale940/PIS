@@ -881,6 +881,14 @@ footer {
     flex-direction: row;       /* keep logo and links on one line */
     align-items: center;
     padding: 8px 10px;         /* small padding for mobile */
+    .navbar ul {
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding-left: 0;
+  flex-wrap: nowrap;
+  align-items: flex-end; /* align links to bottom of navbar */
+
   }
 
   .navbar ul {
@@ -893,6 +901,13 @@ footer {
     padding-left: 0;            /* flush Home to left */
     margin: 0;
     -webkit-overflow-scrolling: touch; /* smooth swipe on iOS */
+        gap: 6px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-top: 10px;   /* move links slightly down */
+    align-items: flex-end;
+
   }
 
   .navbar ul li {
@@ -958,6 +973,7 @@ footer {
   }
 
 }
+
 
 
 
