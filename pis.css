@@ -793,4 +793,67 @@ footer {
   background: #104E8B; /* darker shade of blue */
   transform: scale(1.05); /* subtle grow effect */
 }
+}
+/* ================= GLOBAL MOBILE FIX ================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* NAVBAR FIX */
+@media (max-width: 768px) {
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .navbar ul li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar ul li a {
+    display: block;
+    padding: 12px 0;
+    width: 100%;
+  }
+
+  /* HERO TEXT FIX */
+  .hero-content {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .hero-content h2 {
+    font-size: 28px;
+  }
+
+}
+
+
+
+
+
 
