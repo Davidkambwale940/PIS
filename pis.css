@@ -880,7 +880,8 @@ footer {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px 6px;
+    padding: 8px 5px;
+   justify-content: flex-start;
 
   }
 
@@ -917,6 +918,7 @@ footer {
   .navbar ul li a {
     font-size: 14px;
     padding: 6px 0;
+    padding: 8px 4px;
   }
 
   /* HERO MOBILE SPACING */
@@ -938,6 +940,7 @@ footer {
   }
 
 }
+
 
 
 
