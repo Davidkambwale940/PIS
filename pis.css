@@ -880,13 +880,13 @@ footer {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
-    padding: 8px 5px;
+    padding: 7px 3px;
 
   }
 
   /* LOGO MOBILE */
   .logo {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .logo-img {
@@ -938,6 +938,7 @@ footer {
   }
 
 }
+
 
 
 
