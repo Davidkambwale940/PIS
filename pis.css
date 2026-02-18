@@ -796,7 +796,6 @@ footer {
 /* =========================================================
    FINAL NAVBAR + MOBILE OPTIMIZATION
    ========================================================= */
-
 /* NAVBAR BASE */
 .navbar {
   display: flex;
@@ -881,8 +880,7 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     padding: 8px 5px;
-   justify-content: flex-start;
-
+    justify-content: flex-start;
   }
 
   /* LOGO MOBILE */
@@ -898,13 +896,16 @@ footer {
     font-size: 18px;
   }
 
-  /* HORIZONTAL SCROLL NAV */
+  /* HORIZONTAL SCROLL NAV FOR 6 LINKS */
   .navbar ul {
+    display: flex;
     width: 100%;
     overflow-x: auto;
     white-space: nowrap;
-    gap: 5px;
+    gap: 6px;          /* space between links */
+    padding-left: 0;    /* flush first link to left */
     padding-top: 8px;
+    margin: 0;
   }
 
   .navbar ul::-webkit-scrollbar {
@@ -912,12 +913,13 @@ footer {
   }
 
   .navbar ul li {
-    flex: 0 0 auto;
+    flex: 0 0 auto;    /* prevent shrinking */
   }
 
   .navbar ul li a {
     font-size: 14px;
-    padding: 8px 4px;
+    padding: 8px 5px;  /* vertical = 8px, horizontal = 5px */
+    white-space: nowrap;
   }
 
   /* HERO MOBILE SPACING */
@@ -936,6 +938,7 @@ footer {
 
   .navbar ul li a {
     font-size: 13px;
+    padding: 7px 4px; /* smaller for tiny screens */
   }
 
 }
