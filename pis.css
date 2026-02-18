@@ -875,12 +875,12 @@ footer {
 
 /* ================= MOBILE ================= */
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
   .navbar {
     flex-direction: column;
     align-items: flex-start;
-    padding: 9px 3px;
+    padding: 8px 6px;
 
   }
 
@@ -902,7 +902,7 @@ footer {
     width: 100%;
     overflow-x: auto;
     white-space: nowrap;
-    gap: 5px;
+    gap: 2px;
     padding-top: 8px;
   }
 
@@ -938,6 +938,7 @@ footer {
   }
 
 }
+
 
 
 
