@@ -902,7 +902,7 @@ footer {
     flex-wrap: nowrap;
     overflow-x: auto;           /* scroll left/right */
     overflow-y: hidden;
-    gap: 8px;
+    gap: 5px;
     padding: 0;
     margin: 0;
     white-space: nowrap;
@@ -914,8 +914,8 @@ footer {
   }
 
   .navbar ul li a {
-    padding: 8px 6px;
-    font-size: 14px;
+    padding: 8px 4px;
+    font-size: 13px;
   }
 
   /* Hide scrollbar */
@@ -944,3 +944,4 @@ footer {
     gap: 6px;
   }
 }
+
