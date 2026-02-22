@@ -21,19 +21,22 @@
 
 /* CEO CARD */
 .team-single {
-  max-width: 420px;
+  max-width: 310px;
   margin: auto;
   background: rgba(0,0,0,0.45);
   padding: 30px 20px;
   border: 1px solid rgba(255,255,255,0.08);
+  
 }
 
 .team-single img {
-  width: 240px;
+  width: 220px;
   height: 240px;
   object-fit: cover;
   margin-bottom: 15px;
   border: 3px solid #c40000;
+   justify-content: center;
+   
 }
 
 .team-single h4 {
@@ -47,7 +50,12 @@
   justify-content: center;
   gap: 30px;
 }
-
+.team-two {
+  display: grid;
+  grid-template-columns: repeat(2, 260px);
+  justify-content: center;
+  gap: 30px;
+}
 /* SUPERVISORS ROW */
 .team-grid.five {
   grid-template-columns: repeat(5, 1fr);
@@ -150,3 +158,4 @@
 .team-single img:active {
   transform: scale(1.15);
 }
+
