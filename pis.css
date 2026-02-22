@@ -439,7 +439,7 @@ footer {
 
   /* SLIDESHOW */
   .slideshow {
-    height: 290px;
+    height: 320px;
     margin-top: 30px;
   }
 
@@ -500,7 +500,7 @@ footer {
   }
 
   .slideshow {
-    height: 250px;
+    height: 280px;
   }
 
   .about-left h3 {
@@ -975,5 +975,6 @@ footer {
     padding: 7px 6px;
   }
 }
+
 
 
