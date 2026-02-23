@@ -108,56 +108,50 @@
   font-size: 13px;
 }
 
-/* MOBILE */
+/* ================= MOBILE FIX FOR TEAM TWO ================= */
 @media (max-width: 900px) {
 
+  /* MAKE team-two VERTICAL */
+  .team-two {
+    grid-template-columns: 1fr;   /* stack cards */
+    gap: 25px;
+  }
+
+  /* MAKE ALL TEAM GRIDS VERTICAL */
   .team-grid {
     grid-template-columns: 1fr;
   }
 
+  /* SUPERVISORS → 2 PER ROW */
   .team-grid.five {
     grid-template-columns: 1fr 1fr;
   }
 
-  .team-single img {
-    width: 120px;
-    height: 120px;
+  /* FIX IMAGE CUTTING */
+  .team-card img {
+    width: 100%;
+    height: auto;         /* 🔥 no more cropping */
+    max-height: none;
+    object-fit: cover;
   }
 
+  /* CEO IMAGE */
+  .team-single img {
+    width: 160px;
+    height: auto;
+  }
+
+  /* BETTER CARD SPACING */
+  .team-card {
+    padding: 18px;
+  }
 }
 
+/* EXTRA SMALL PHONES */
 @media (max-width: 500px) {
 
   .team-grid.five {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;   /* supervisors 1 per row */
   }
 
 }
-/* IMAGE CONTAINER SAFETY */
-.team-card,
-.team-single {
-  overflow: hidden;
-  position: relative;
-}
-
-/* IMAGE DEFAULT STATE */
-.team-card img,
-.team-single img {
-  transition: transform 0.4s ease;
-  cursor: pointer;
-}
-
-/* HOVER ZOOM */
-.team-card:hover img,
-.team-single:hover img {
-  transform: scale(1.08);
-}
-
-/* CLICK / TAP ZOOM (ACTIVE STATE) */
-.team-card img:active,
-.team-single img:active {
-  transform: scale(1.15);
-}
-
-
-
