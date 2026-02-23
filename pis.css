@@ -746,7 +746,6 @@ footer {
 /* ================= TEAM MOBILE ================= */
 @media (max-width: 900px) {
   .team-grid.three,
-  .team-two.two,
   .team-grid.four {
     grid-template-columns: 1fr;
   }
@@ -976,6 +975,7 @@ footer {
     padding: 7px 6px;
   }
 }
+
 
 
 
