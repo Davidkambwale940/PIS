@@ -109,7 +109,7 @@
 }
 
 /* MOBILE */
-@media (max-width: 1400px) {
+@media (max-width: 900px) {
 
   .team-grid {
     grid-template-columns: 1fr;
@@ -158,5 +158,6 @@
 .team-single img:active {
   transform: scale(1.15);
 }
+
 
 
