@@ -519,7 +519,7 @@ footer {
 .contact-grid {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(274px, 1fr));
   gap: 25px;
   margin-top: 40px;
 }
@@ -975,6 +975,7 @@ footer {
     padding: 7px 6px;
   }
 }
+
 
 
 
