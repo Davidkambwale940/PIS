@@ -692,7 +692,7 @@ body {
   margin-top: 30px;
   padding: 14px 32px;
   background: #d4af37;
-  background: rgb(198, 43, 43);
+  background:  rgb(153, 0, 0);
   font-weight: bold;
   text-decoration: none;
   border-radius: 30px;
@@ -1011,6 +1011,7 @@ footer {
     padding: 7px 6px;
   }
 }
+
 
 
 
