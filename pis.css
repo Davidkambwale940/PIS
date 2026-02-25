@@ -673,7 +673,7 @@ body {
   content: "";
   width: 80px;
   height: 3px;
-  background: #d4af37;
+   background: rgb(198, 43, 43);
   display: block;
   margin: 10px auto 0;
 }
@@ -692,7 +692,7 @@ body {
   margin-top: 30px;
   padding: 14px 32px;
   background: #d4af37;
-  color: #000;
+  background: rgb(198, 43, 43);
   font-weight: bold;
   text-decoration: none;
   border-radius: 30px;
@@ -1011,6 +1011,7 @@ footer {
     padding: 7px 6px;
   }
 }
+
 
 
 
