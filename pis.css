@@ -653,37 +653,73 @@ body {
   padding: 30px;
   border-left: 6px solid #fff;
 }
+/* ===== MAP SECTION ===== */
 
-/* MAP */
-.map-wrapper {
-  max-width: 420px;
-  margin: auto;
+.map-section {
+  padding: 60px 20px;
+  background: #111;
   text-align: center;
 }
 
-.namibia-map {
-  width: 100%;
+.map-section h2 {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 30px;
+  position: relative;
 }
 
-.pin {
-  fill: #fff;
-  opacity: .85;
+/* gold underline effect */
+.map-section h2::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background: #d4af37;
+  display: block;
+  margin: 10px auto 0;
 }
 
-.pin.windhoek {
-  fill: #c40000;
-  animation: pulse 2s infinite;
+.map-container {
+  max-width: 1100px;
+  margin: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
 }
 
-@keyframes pulse {
-  0% { r: 6; opacity: 1; }
-  50% { r: 10; opacity: .4; }
-  100% { r: 6; opacity: 1; }
+/* directions button */
+.map-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 32px;
+  background: #d4af37;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s ease;
 }
 
-.legend {
-  margin-top: 10px;
-  font-size: 14px;
+.map-btn:hover {
+  background: #fff;
+  color: #000;
+  transform: scale(1.05);
+}
+.map-address {
+  color: #ccc;
+  margin-top: 15px;
+  font-size: 15px;
+}
+@media (max-width: 768px) {
+
+  .map-section h2 {
+    font-size: 26px;
+  }
+
+  .map-btn {
+    width: 90%;
+    padding: 14px;
+  }
+
 }
 
 /* OFFICES */
@@ -975,6 +1011,7 @@ footer {
     padding: 7px 6px;
   }
 }
+
 
 
 
